@@ -58,7 +58,7 @@
                             <goal>npm</goal>
                          </goals>
                          <configuration>
-                            <arguments>run test-coverage</arguments>
+                            <arguments>run test-coverage -- --browsers=ChromeHeadlessNoSandbox</arguments>
                          </configuration>
                             <phase>generate-resources</phase>
                        </execution>
