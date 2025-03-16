@@ -62,7 +62,16 @@
                          </configuration>
                             <phase>generate-resources</phase>
                        </execution>
-                      
+                       <execution>
+                         <id>npm-post-sonar</id>
+                         <goals>
+                            <goal>npm</goal>
+                         </goals>
+                         <configuration>
+                            <arguments>run sonar</arguments>
+                         </configuration>
+                            <phase>generate-resources</phase>
+                       </execution>
                    </executions>
                 </plugin>
              </plugins>   
