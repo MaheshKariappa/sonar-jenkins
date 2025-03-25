@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test-coverage": "ng test --watch=false --code-coverage",
-    "sonar": "node_modules/sonar-scanner/bin/sonar-scanner"
+    "prepare-environment": "bash prepare-environment.sh",
+    "sonar": "npm run prepare-environment -- .env && sonar-scanner"
   },
   "private": true,
   "dependencies": {

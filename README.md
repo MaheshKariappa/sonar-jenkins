@@ -15,7 +15,7 @@ All other branches contain older version of Angular, thus containing dependencie
 - Java test coverage reports are generated with: 
 ` mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify org.jacoco:jacoco-maven-plugin:report sonar:sonar -Dsonar.jdbc.username=sonar -Dsonar.jdbc.password=password -Dsonar.host.url=http://<sonarqube-address>:9000 -Dsonar.jdbc.url=jdbc:postgresql://<postgre-address>/sonarqube `
 
-- Angular test coverage reporst are generated with:
+- Angular test coverage reports are generated with:
 `mvn clean install -Dsonar-scan from frontend-client folder`
 
 ## Can I get the course with a discount?
